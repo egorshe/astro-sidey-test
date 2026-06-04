@@ -12,9 +12,6 @@ const configSchema = z.object({
     locale: z.string().default("en"),
   }),
   layout: z.object({
-    sidebarPosition: z.enum(["left", "right"]),
-    maxContentWidth: z.string().default("65ch"),
-    fontStack: z.enum(["sans", "serif", "mono"]).default("sans"),
     postsPerPage: z.number().default(10),
   }),
   navigation: z.array(
@@ -23,10 +20,6 @@ const configSchema = z.object({
       href: z.string(),
     })
   ),
-  theme: z.object({
-    defaultMode: z.enum(["light", "dark"]).default("light"),
-    allowToggle: z.boolean().default(true),
-  }),
 })
 
 const parseResult = configSchema.safeParse(sideyConfig)
