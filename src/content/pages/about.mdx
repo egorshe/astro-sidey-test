@@ -3,16 +3,9 @@ title: "About"
 description: "What Sidey is and why it exists."
 ---
 
+import Figure from "@components/mdx/Figure.astro"
+
 **Sidey** started from a simple want, a personal site that doesn't get in the way. A clean, quiet place to write and share things on the internet.
-
-<div class="prose-img:max-h-40 prose-img:w-full prose-img:object-cover prose-img:object-center">
-  ![Reflection of sunset at
-  dawn](https://images.unsplash.com/photo-1420136390439-1482fc2ce4b9?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-</div>
-
-<div class="-mt-5 text-center text-xs">
-  Photo by [Hide Obara](https://unsplash.com/@hideobara). Click to enlarge.
-</div>
 
 Not built to impress at first glance. No big hero sections or animated gradients. They are fun to set up for a while, but somewhere between configuring the integration or adjusting the layout and design, the writing stops.
 
@@ -36,13 +29,24 @@ Sidey uses [Flexoki], a color palette designed by [Steph Ango].
 Inspired by ink and paper, it is warm, low-contrast, and easy on the eyes for long reading sessions.
 Available in both light and dark modes.
 
+## Image lightbox
+
+Click any image in Sidey and it opens in a full-screen overlay, no extra setup needed. Either using the Figure component, which supports captions, or just a plain markdown image.
+
+<Figure
+  src="https://images.unsplash.com/photo-1691631117201-c4c63d1e2c54?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  alt="Shiny Fan Fern or Umbrella fern, Sticherus flabbelatus, growing wild on the side of the road near Kuranda, in Australia."
+>
+  Using Figure component. Photo by [David
+  Clode](https://unsplash.com/@davidclode).
+</Figure>
+
 ## Everything else
 
 Sidey also comes with a few smaller things that are good to have:
 
 - Single config file
 - Automatically open external links in new tab
-- Built-in image lightbox for markdown images
 - RSS Feed, Sitemap, and a 404 page
 
 ---
