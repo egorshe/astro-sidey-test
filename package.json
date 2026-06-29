@@ -40,5 +40,9 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.8.0",
     "typescript": "^6.0.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "sharp@0.34.5": true
   }
 }
